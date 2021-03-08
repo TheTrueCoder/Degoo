@@ -891,7 +891,7 @@ def put_file(local_file, remote_folder, verbose=0, if_changed=False, dry_run=Fal
         raise DegooError(f"put_file: {remote_folder} is not a remote folder!")
 
     if verbose > 1:
-        print(f"Asked to upload {local_file} to {dir_path}: {if_changed=} {dry_run=}")
+        print(f"Asked to upload {local_file} to {dir_path}: {if_changed} {dry_run}")
 
     # Upload only if:
     #    if_changed is False and dry_run is False (neither is true)
